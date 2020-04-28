@@ -316,31 +316,42 @@ li.top_left_starred_messages {
 }
 
 /*
-    The All Messages and Stream chevrons are
+    The All Messages and Stream ellipsis-v(vertical 3 dots) are
     pretty similar.
 */
 .all-messages-sidebar-menu-icon,
-.starred-messages-sidebar-menu-icon,
+.starred-messages-sidebar-menu-icon {
+    top: 3px;
+    right: 0px;
+    font-size: 1.15em;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+}
+
 .stream-sidebar-menu-icon {
     top: 3px;
-    right: 10px;
-    font-size: 0.8em;
+    right: 0px;
+    font-size: 1.15em;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
 }
 
 /*
-    For topic chevrons we use a slightly smaller
+    For topic ellipsis-v(vertical 3 dots) we use a slightly smaller
     font to show they're "lower" in the hierarchy,
     which also affects it positioning.
 */
 .topic-sidebar-menu-icon {
-    top: 1px;
-    right: 10px;
-    font-size: 0.7em;
+    top: 3px;
+    right: 5px;
+    font-size: 1.0em;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
 }
 
 /*
     When you hover over list items, we hover
-    the relevant chevrons in light gray.
+    the relevant ellipsis-v(vertical 3 dots) in light gray.
 */
 li.top_left_all_messages:hover .all-messages-sidebar-menu-icon,
 li.top_left_starred_messages:hover .starred-messages-sidebar-menu-icon,
@@ -352,7 +363,7 @@ li.topic-list-item:hover .topic-sidebar-menu-icon {
 }
 
 /*
-    If you hover directly over the chevron itself,
+    If you hover directly over the ellipsis-v(vertical 3 dots) itself,
     show it in black.
 */
 .starred-messages-sidebar-menu-icon:hover,
